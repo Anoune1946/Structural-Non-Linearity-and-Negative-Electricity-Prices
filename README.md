@@ -9,7 +9,7 @@ This repository contains code and data to reproduce the analyses in the paper ".
 Install with: `pip install numpy pandas scipy scikit-learn xgboost hmmlearn matplotlib entsoe-py requests holidays joblib tzdata`
 
 ## Usage
-1. Request an ENTSO-E API key at https://transparency.entsoe.eu/
+1. Request an Energy-charts and ENTSO-E API key at https://transparency.entsoe.eu/
 2. Set the `ENTSOE_TOKEN` environment variable to your key.
 3. Run the notebooks in order:
    - `01_France.ipynb` 
