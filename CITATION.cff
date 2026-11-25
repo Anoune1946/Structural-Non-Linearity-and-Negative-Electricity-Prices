@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this research code, please cite the repository and record the exact commit or release used."
+authors:
+  - family-names: Mergane
+    given-names: Anoune
+title: "Structural Non-Linearity and Negative Electricity Prices"
+type: software
+url: "https://github.com/Anoune1946/Structural-Non-Linearity-and-Negative-Electricity-Prices"
