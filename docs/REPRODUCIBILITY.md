@@ -14,7 +14,8 @@ This file records practical issues found during the repository review. It is int
 
 ### France — `01_France.ipynb`
 
-- The notebook reads `C:/Users/P279390/Documents/Production et Prix en France/historique_2015_2024.csv`. This path is specific to one Windows environment and must be replaced with a portable path or a user-selected file.
+- The notebook now reads the CSV path from the `FRANCE_DATA_PATH` environment variable. If unset, it expects `data/historique_2015_2024.csv` relative to the working directory.
+- The historical France CSV is not included in the repository. Supply an authorised local copy and set the variable before starting Jupyter. For example, in Windows PowerShell: `$env:FRANCE_DATA_PATH = 'D:\\data\\historique_2015_2024.csv'`.
 - The notebook contains its own earlier modelling workflow and should not be assumed to be identical to the Germany/Luxembourg and Spain implementations.
 - It interpolates missing hourly values and replaces prices above 1,000 €/MWh with a rolling median. These choices materially affect high-price observations and need an explicit methodological justification before research results are finalised.
 
@@ -40,7 +41,7 @@ The country notebooks call diagnostic plotting and summary-export routines. The 
 
 ## Remaining reproducibility work
 
-- replace the machine-specific France path;
+- keep the France input path configurable and document the authorised local data source;
 - record a tested Python/package environment (for example, a lock file or `pip freeze` snapshot);
 - separate reusable functions from notebook cells;
 - add automated tests for temporal alignment, daylight-saving transitions, missing-data handling and model prediction;
