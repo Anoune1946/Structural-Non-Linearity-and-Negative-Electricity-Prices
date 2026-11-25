@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+matplotlib
+statsmodels
+tqdm
+entsoe-py
+requests
+holidays
+joblib
+pytz
+tzdata
+jupyterlab
+ipykernel
