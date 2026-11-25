@@ -33,9 +33,11 @@ The implementation and specification are still evolving. Consult the notebook co
 ```text
 .
 ├── README.md
+├── CITATION.cff
 ├── requirements.txt
 ├── .gitignore
 ├── docs/
+│   ├── ARCHITECTURE.md
 │   ├── METHODOLOGY.md
 │   └── REPRODUCIBILITY.md
 └── Structural/
