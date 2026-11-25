@@ -113,9 +113,7 @@ export ENTSOE_TOKEN="your_token"
 
 Never commit API tokens, private datasets or company-confidential information. The notebooks also contain an Energy-Charts alternative; source availability and coverage must be checked for each market.
 
-The France notebook currently reads a machine-specific Windows path:
-`C:/Users/P279390/Documents/Production et Prix en France/historique_2015_2024.csv`.
-It therefore requires its input path to be adapted before it can run on another machine.
+The France notebook now reads its input path from the `FRANCE_DATA_PATH` environment variable. By default it expects `data/historique_2015_2024.csv` relative to the working directory. The historical France CSV is not included in this repository; point the variable to your authorised local copy.
 
 ## Running the notebooks
 
